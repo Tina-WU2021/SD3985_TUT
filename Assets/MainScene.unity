@@ -4341,6 +4341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ruby
       objectReference: {fileID: 0}
+    - target: {fileID: 7167060190899357011, guid: 7ac3ff6a20ad81c49aa618a617cb8ad7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7167060190899357013, guid: 7ac3ff6a20ad81c49aa618a617cb8ad7, type: 3}
       propertyPath: m_RootOrder
       value: 3
