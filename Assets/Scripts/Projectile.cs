@@ -28,7 +28,7 @@ public class Projectile : MonoBehaviour
     {
         EnemyController e = collision.collider.GetComponent<EnemyController>();
         Debug.Log("Entered OnCollisionEnter2D");
-        Debug.Log(e);
+        Debug.Log(collision.collider.name);
         if (e != null)
         {
             Debug.Log("Fix triggered");

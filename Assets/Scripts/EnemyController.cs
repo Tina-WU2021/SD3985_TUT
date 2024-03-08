@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnemyController : MonoBehaviour
 {
     public float speed;
     public bool vertical;
     public float changeTime = 3.0f;
+
+    public ParticleSystem smokeEffect;
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -77,9 +80,11 @@ public class EnemyController : MonoBehaviour
     }
     public void Fix()
     {
+        Debug.Log("robot stop");
         broken = false;
         rigidbody2D.simulated = false;
         //optional if you added the fixed animation
         animator.SetTrigger("Fixed");
+        smokeEffect.Stop();
     }
 }
